@@ -1,0 +1,81 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="KinectTest.MainWindow"
+        Title="MainWindow" Loaded="Window_Loaded" Closing="Window_Closing" SizeToContent="WidthAndHeight" PreviewKeyDown="Window_PreviewKeyDown">
+    <Window.Resources>
+        <ImageBrush x:Key="Brush1" ImageSource="soccerball3.png" Opacity="0.9"/>
+        <System:Double x:Key="Double1">1</System:Double>
+    </Window.Resources>
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
+    </Window.Background>
+    <Grid Width="1024" Height="768" x:Name="maingrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="555"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Image x:Name="bg_img" Source="soccer_1024-768.jpg" Grid.RowSpan="2"/>
+        <Border x:Name="border1" Width="960" Height="540"  Grid.Row="0">
+            <Grid>
+                <Image x:Name="imageRgbCamera" Stretch="Uniform" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+                <Image x:Name="imageDepthCamera" Stretch="Uniform" Opacity="0.7" Grid.RowSpan="2" Grid.ColumnSpan="3" />
+                <Canvas x:Name="canvas1" Grid.RowSpan="2" Grid.ColumnSpan="3" />
+                <Grid x:Name="grid1" ShowGridLines="True" Width="720" Height="405">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Rectangle x:Name="AreaRect1" Fill="#FF1010E0" Stroke="Black" Grid.Column="0" Grid.Row="0" Opacity="0.25"/>
+                    <Rectangle x:Name="AreaRect2" Fill="#FF1010E0" Stroke="Black" Grid.Column="1" Grid.Row="0" Opacity="0.25"/>
+                    <Rectangle x:Name="AreaRect3" Fill="#FF1010E0" Stroke="Black" Grid.Column="2" Grid.Row="0" Opacity="0.25"/>
+                    <Rectangle x:Name="AreaRect4" Fill="#FF1010E0" Stroke="Black" Grid.Column="0" Grid.Row="1" Opacity="0.25"/>
+                    <Rectangle x:Name="AreaRect5" Fill="#FF1010E0" Stroke="Black" Grid.Column="1" Grid.Row="1" Opacity="0.25"/>
+                    <Rectangle x:Name="AreaRect6" Fill="#FF1010E0" Stroke="Black" Grid.Column="2" Grid.Row="1" Opacity="0.25"/>
+
+                    <Rectangle x:Name="sAreaRect1" Fill="{DynamicResource Brush1}" Stroke="Black" Grid.Column="0" Grid.Row="0" Opacity="{DynamicResource Double1}"/>
+                    <Rectangle x:Name="sAreaRect2" Fill="{DynamicResource Brush1}" Stroke="Black" Grid.Column="1" Grid.Row="0" Opacity="{DynamicResource Double1}"/>
+                    <Rectangle x:Name="sAreaRect3" Fill="{DynamicResource Brush1}" Stroke="Black" Grid.Column="2" Grid.Row="0" Opacity="{DynamicResource Double1}"/>
+                    <Rectangle x:Name="sAreaRect4" Fill="{DynamicResource Brush1}" Stroke="Black" Grid.Column="0" Grid.Row="1" Opacity="{DynamicResource Double1}"/>
+                    <Rectangle x:Name="sAreaRect5" Fill="{DynamicResource Brush1}" Stroke="Black" Grid.Column="1" Grid.Row="1" Opacity="{DynamicResource Double1}"/>
+                    <Rectangle x:Name="sAreaRect6" Fill="{DynamicResource Brush1}" Stroke="Black" Grid.Column="2" Grid.Row="1" Opacity="{DynamicResource Double1}"/>
+
+                </Grid>
+            </Grid>
+        </Border>
+        <Canvas  Grid.Row="1" >
+            <ListBox  Canvas.Left="86" Canvas.Top="51" Width="397" BorderThickness="0" Background="{x:Null}">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="Padding" Value="0"/>
+                        <Setter Property="Background" Value="White"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBoxItem  BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Left">
+                    <Grid Height="100" Width="70">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" BorderThickness="0,0,0,3" BorderBrush="Gray">
+                            <TextBlock Text="1" FontSize="15" VerticalAlignment="Center" TextAlignment="Center" />
+                        </Border>
+                        <Image  Grid.Row="1"/>
+                    </Grid>
+                </ListBoxItem>
+            </ListBox>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Canvas.Left="885" Canvas.Top="185" Width="75">
+                <TextBlock.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </Canvas>
+    </Grid>
+</Window>

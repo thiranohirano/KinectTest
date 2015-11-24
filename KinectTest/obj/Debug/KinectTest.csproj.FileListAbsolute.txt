@@ -1,0 +1,15 @@
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\bin\Debug\KinectTest.exe.config
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\bin\Debug\KinectTest.exe
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\bin\Debug\KinectTest.pdb
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest.csprojResolveAssemblyReference.cache
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\MainWindow.baml
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\MainWindow.g.cs
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\App.g.cs
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest_MarkupCompile.cache
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest.g.resources
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest.Properties.Resources.resources
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest.csproj.GenerateResource.Cache
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest.exe
+c:\users\hirano\documents\visual studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest.pdb
+C:\Users\hirano\Documents\Visual Studio 2013\Projects\KinectTest\KinectTest\obj\Debug\Interop.WMPLib.dll
+C:\Users\hirano\Documents\Visual Studio 2013\Projects\KinectTest\KinectTest\obj\Debug\KinectTest.csproj.ResolveComReference.cache
